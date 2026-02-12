@@ -1,0 +1,123 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 320px;
+  background-color: white;
+  border-right: 1px solid #e0e0e0;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.02);
+}
+
+.main-content {
+  flex: 1;
+  padding: 32px;
+  overflow-y: auto;
+}
+
+.main-content h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a2b3c;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #28a745;
+  padding-bottom: 12px;
+  display: inline-block;
+}
+
+.query-section {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.query-column {
+  flex: 1;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn-run {
+  flex: 2;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-run:hover:not(:disabled) {
+  background-color: #218838;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2);
+}
+
+.btn-run:disabled {
+  background-color: #b8e0bd;
+  cursor: not-allowed;
+}
+
+.btn-restart {
+  flex: 1;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-restart:hover {
+  background-color: #5a6268;
+}
+
+.connection-prompt {
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196f3;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  color: #0c5460;
+}
+
+.mapping-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.error-message {
+  background-color: #ffebee;
+  border-left: 4px solid #dc3545;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  color: #721c24;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.results-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
